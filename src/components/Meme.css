@@ -1,0 +1,106 @@
+main {
+    padding: 36px;
+    /* max-width: fit-content; */
+}
+.form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+    margin-bottom: 17px;
+}
+
+.form--input {
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+    text-indent: 5px;
+}
+
+.form--button {
+    grid-column: 1 / -1;
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    background: linear-gradient(to right,#ec2f4b, #009fff);
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.meme {
+    position: relative;
+}
+
+.meme--image {
+    max-width: 100%;
+    /* min-width: 40%; */
+    border-radius: 6px;
+    margin: auto auto;
+    overflow: hidden;
+    display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
+}
+
+@media only screen and (max-width: 600px){
+    .meme--text {
+        position: absolute;
+        width: 80%;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 15px 0;
+        padding: 0 5px;
+        font-family: impact, sans-serif;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 1px;
+        text-shadow:
+            1px 1px 0 #000,
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            0 1px 0 #000,
+            1px 0 0 #000,
+            0 -1px 0 #000,
+            -1px 0 0 #000,
+            1px 1px 3px #000;
+    }
+}
